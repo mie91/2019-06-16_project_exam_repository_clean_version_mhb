@@ -1,0 +1,2197 @@
+/*  _____________________________________COLOR AND FONT INFORMATION _____________________________________*/
+
+/*
+
+FONTS:
+font-family: 'Roboto', sans-serif;
+
+
+COLORS:
+White: rgb(255,255,255,1);
+Black: rgb(0,0,0,1);
+
+Gray: rgb(31,34,40,1);
+Dark Gray: rgb(20,20,20,1);
+Even Darker Gray: rgb(5,5,5,1);
+
+Dark Wine Red: rgb(85,0,0, 1);
+
+
+
+
+
+
+OTHER:
+
+
+
+*/
+
+
+
+
+/* _______________THE HEADER _______________*/
+
+header {
+	width: 100%;
+
+}
+
+/* ______NavLinks ______*/
+
+
+
+.basicLink a {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: underline;
+	color: rgb(255, 255, 255, 0.5);
+}
+
+.basicLink a:hover {
+	color: rgb(255, 255, 255, 0.9);
+}
+
+
+.mainHeader {
+	position: fixed;
+	z-index: 4;
+	Width: 90vw;
+	margin: auto;
+	background-color: rgb(5, 5, 5, 1);
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 5px;
+
+}
+
+.navbar {
+	overflow: hidden;
+	float: right;
+	margin: 0px 15px 0px 15px;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: rgb(255, 255, 255, 1);
+	background-color: rgb(255, 255, 255, 0.1);
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin: 5px;
+	border: rgb(255, 255, 255, 1) solid thin;
+	margin-top: 20px;
+
+}
+
+.dropDownLink {
+	float: left;
+}
+
+#activeNav {
+	text-decoration: underline;
+	background-color: rgb(85, 0, 0, 1);
+}
+
+#activeNav:hover {
+	background-color: rgb(255, 255, 255, 1);
+	color: rgb(0, 0, 0, 1.0);
+}
+
+.dropDownLink .dropDownName {
+	font-size: 16px;
+	border: rgb(255, 255, 255, 1) solid thin;
+	outline: none;
+	color: rgb(255, 255, 255, 1);
+	padding: 10px;
+	background-color: rgb(255, 255, 255, 0.1);
+	font-family: inherit;
+	margin: 5px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.navbar a:hover,
+.dropDownLink:hover .dropDownName {
+	background-color: rgb(255, 255, 255, 1);
+	color: rgb(0, 0, 0, 1.0);
+	font-weight: 600;
+	border-color: rgb(0, 0, 0, 1);
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgb(255, 255, 255, 1);
+	min-width: 160px;
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+	z-index: 2;
+
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	border: rgb(0, 0, 0, 0.3) solid thin;
+	margin: 3px;
+	font-weight: 600;
+
+}
+
+.dropdown-content a:hover {
+	background-color: rgb(0, 0, 0, 0.7);
+	color: rgb(255, 255, 255, 1);
+}
+
+.dropDownLink:hover .dropdown-content {
+	display: block;
+}
+
+/* ______HeaderLogo ______*/
+
+.logoSection {
+	display: inline-block;
+	margin: 10px 0px 5px 30px;
+	text-align: center;
+}
+
+.logoimage {
+	margin: 10px 0px 5px 30px;
+}
+
+/* _______________H1,H2 P's etc'_______________*/
+
+
+.content-wrap h2 {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+/* _______________THE BODY _______________*/
+
+body {
+	height: 100%;
+	max-width: 90vw;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255, 1);
+	background-color: rgb(31, 34, 40, 1);
+	align-items: center;
+
+}
+
+.content-wrap {
+	max-width: 100%;
+	margin: 0 auto;
+	padding-top: 0;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.col1,
+.col2 {
+	display: inline-block;
+	width: 50%;
+	flex-direction: column;
+}
+
+.col1,
+.col2 p {
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255, 1);
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+
+.col1 {
+	margin: 60px 20px 60px 20px;
+	padding: 20px;
+}
+
+.col2 {
+
+	margin: 60px 20px 60px 20px;
+	padding: 20px;
+	float: right;
+}
+
+
+.col4 {
+	width: auto;
+}
+
+
+/* ______Common links, button, text areas etc. ______*/
+
+
+
+.basicButtonLink a {
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255, 0.8);
+	background-color: rgb(85, 0, 0, 1);
+	font-weight: 300;
+	font-size: 12pt;
+	padding: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	border: thin;
+	border-style: solid;
+	letter-spacing: 4px;
+	text-align: center;
+	box-shadow: 0px 5px 9px 3px rgb(0, 0, 0, 0.4);
+}
+
+
+.basicButtonLink a:hover {
+	background-color: rgb(255, 255, 255, 1);
+	color: rgb(0, 0, 0, 1.0);
+	font-weight: 300;
+	box-shadow: none;
+
+}
+
+.generalTextBox {
+	background-color: rgb(255, 255, 255, 0.1);
+	padding: 20px;
+	border: rgb(255, 255, 255, 0.5) solid thin;
+	border-radius: 10px;
+	margin: auto;
+	width: auto;
+}
+
+.textArea {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	margin: 0px 30px 0 30px;
+}
+
+/* ______Collapsibles ______*/
+.col3 {
+	width: 100%;
+}
+
+.collapsible {
+	background-color: rgb(255, 255, 255, 0.3);
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	width: 60px;
+	text-align: center;
+	border-radius: 10px;
+	display: block;
+	margin: auto;
+	margin-bottom: 50px;
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+	border: rgb(0, 0, 0, 0.5) solid thin;
+}
+
+.collapsible:hover {
+	background-color: rgb(255, 255, 255, 0.5);
+	box-shadow: none;
+}
+
+.collapseContent {
+	padding: 0px;
+	display: none;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255, 1);
+	background-color: rgb(0, 0, 0, 0.3);
+	font-weight: 300;
+	letter-spacing: 2px;
+	border-top: rgb(255, 255, 255, 0.5) solid thin;
+
+}
+
+
+.collapsibleHeader {
+	text-align: center;
+}
+
+
+/* ______Parallaxes ______*/
+
+.parallax1,
+.parallax2,
+.parallax3,
+.parallax4,
+.parallax5,
+.parallax6,
+.parallax7,
+.parallax8,
+.parallax9 {
+	position: relative;
+	opacity: 1;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: solid;
+	border-top: solid;
+	border-color: rgb(255, 255, 255, 1);
+	border-width: thin;
+}
+
+.parallax1 {
+	background-image: url("images/resized/welcomepar.jpg");
+	min-height: 700px;
+}
+
+.parallax2 {
+	background-image: url("images/resized/launchpar.jpg");
+	min-height: 500px;
+}
+
+.parallax3 {
+	background-image: url("images/resized/rocketspar.jpg");
+	min-height: 500px;
+}
+
+.parallax4 {
+	background-image: url("images/resized/launchpadspar.jpg");
+	min-height: 500px;
+}
+
+.parallax5 {
+	background-image: url("/images/resized/futureplanspar.jpg");
+	min-height: 700px;
+}
+
+.parallax6 {
+	background-image: url("/images/resized/futurelaunchspar.jpg");
+	min-height: 500px;
+}
+
+.parallax7 {
+	background-image: url("/images/resized/par7.jpg");
+	min-height: 700px;
+}
+
+.parallax8 {
+	background-image: url("/images/resized/par8v2.jpg");
+	min-height: 700px;
+}
+
+.parallax9 {
+	background-image: url("");
+	min-height: 500px;
+}
+
+
+/* _______________Currently Happening _______________*/
+
+.parallaxheader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+
+	background-color: rgb(0, 0, 0, 0.8);
+	color: rgb(255, 255, 255, 1);
+
+	font-size: 36px;
+	letter-spacing: 20px;
+	text-transform: uppercase;
+
+}
+
+/* ______Welcome/Company Info ______*/
+
+
+#companyInfo {
+	background-color: rgb(255, 255, 255, 0.1);
+	padding: 20px;
+	border: rgb(255, 255, 255, 0.5) solid thin;
+	border-radius: 10px;
+	margin-left: 0px;
+}
+
+#companyInfo ul {
+	list-style-type: none;
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#companyInfo a {
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255, 0.8);
+	background-color: rgb(85, 0, 0, 1);
+	font-weight: 400;
+	font-size: 12pt;
+	padding: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	border: thin;
+	border-style: solid;
+	letter-spacing: 4px;
+	margin: 5px;
+	box-shadow: 0px 5px 9px 3px rgb(0, 0, 0, 0.4);
+}
+
+
+#companyInfo a:hover {
+	background-color: rgb(255, 255, 255, 1);
+	box-shadow: none;
+	color: rgb(0, 0, 0, 1.0);
+	font-weight: 600;
+}
+
+
+
+.newsLetter {
+	margin: 40px;
+	text-align: center;
+
+}
+
+.newsLetter input {
+	padding: 10px;
+	width: 30%;
+	border: rgb(0, 0, 0, 1) solid thin;
+	font-size: 18px;
+}
+
+
+#newsletterbutton {
+	width: auto;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255, 0.8);
+	background-color: rgb(85, 0, 0, 1);
+	font-weight: 300;
+	font-size: 12pt;
+	text-decoration: none;
+	cursor: pointer;
+	border: thin;
+	border-style: solid;
+	letter-spacing: 4px;
+	margin: 5px;
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+}
+
+
+#newsletterbutton:hover {
+	background-color: rgb(255, 255, 255, 1);
+	color: rgb(0, 0, 0, 1.0);
+	font-weight: 600;
+	box-shadow: none;
+}
+
+#newsLetterNotification {
+	color: red;
+	font-size: 18px;
+}
+
+
+.thumbnailPhoto {
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+	border: rgb(0, 0, 0, 0.5) solid thin;
+}
+
+.thumbnailPhoto:hover {
+	box-shadow: none;
+}
+
+.thumbnailPhoto img {
+	width: 100%;
+	height: auto;
+}
+
+
+.thumbnailGallery {
+	padding: 0 6px;
+	float: left;
+	width: 30%;
+	margin: 5px;
+}
+
+
+
+/* ______Next Launch ______*/
+
+#nextLaunch {
+	background-color: rgb(255, 255, 255, 0.1);
+	padding: 20px;
+	border: rgb(255, 255, 255, 0.5) solid thin;
+	border-radius: 20px;
+}
+
+#nextLaunch h3 {
+	letter-spacing: 4px;
+	text-decoration: underline;
+}
+
+#nextLaunchCountdown {
+
+	text-align: center;
+	border: rgb(255, 255, 255, 0.5) solid thin;
+	border-radius: 20px;
+	padding: 30px;
+	background-color: rgb(255, 255, 255, 0.1);
+	margin-bottom: 20px;
+}
+
+#nextLaunchCountdown p {
+	display: block;
+	margin: 20px;
+	border: rgb(255, 255, 255, 0.5) solid thin;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: center;
+	background-color: rgb(31, 34, 40, 1);
+}
+
+.nextLaunchMap {
+	text-align: center;
+	margin: 20px;
+	padding: 0px;
+}
+
+.nextLaunchMap iframe {
+	border: rgb(255, 255, 255, 1) solid thin;
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+}
+
+
+/* ______Rocket information ______*/
+
+#rocketInformation {
+	display: inline-flex;
+	flex-direction: row;
+	margin: 20px;
+	color: rgb(255, 255, 255, 1);
+}
+
+.rocketTable {
+	border-right: rgb(255, 255, 255, 0.5) dotted medium;
+	width: 25%;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+
+.rocketTable h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 4px;
+	font-size: 18px;
+	background-color: rgb(255, 255, 255, 0.1);
+	padding: 8px;
+	margin: 0 10px 20px 0px;
+	border: rgb(255, 255, 255, 0.2) solid thin;
+}
+
+.rocketTable p {
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.rocketFamilyImg {
+	text-align: center;
+	margin: auto;
+	display: block;
+	margin-top: 10px;
+}
+
+
+/* ______Launch Pad Information ______*/
+
+
+#launchPadsInformation #launchPadsInformation div {
+	display: block;
+	width: 50%;
+	margin: auto;
+
+}
+
+.padTable {
+	border-bottom: rgb(255, 255, 255, 0.5) dotted medium;
+	margin: 25px;
+}
+
+
+.padTable a {
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255, 0.8);
+	background-color: rgb(85, 0, 0, 1);
+	font-weight: 300;
+	font-size: 12pt;
+	padding: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	border: thin;
+	border-style: solid;
+	letter-spacing: 4px;
+	text-align: center;
+	box-shadow: 0px 5px 9px 3px rgb(0, 0, 0, 0.4);
+}
+
+
+.padTable a:hover {
+	background-color: rgb(255, 255, 255, 1);
+	color: rgb(0, 0, 0, 1.0);
+	font-weight: 600;
+	box-shadow: none;
+}
+
+
+.padTable h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 4px;
+	font-size: 18px;
+	background-color: rgb(255, 255, 255, 0.1);
+	padding: 8px;
+	margin: 0 10px 20px 0px;
+	border: rgb(255, 255, 255, 0.2) solid thin;
+}
+
+.padTable p {
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.launchVideo {
+	margin-bottom: 30px;
+	background-color: rgb(255, 255, 255, 0.1);
+	padding: 20px;
+	border: rgb(255, 255, 255, 0.5) solid thin;
+	border-radius: 10px;
+	margin-left: 0px;
+	display: block;
+	text-align: center;
+}
+
+.ytVideo {
+	border: rgb(255, 255, 255, 1) solid thin;
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+}
+
+.ytVideo iframe {
+	margin: 20px;
+}
+
+
+/* _______________FUTURE_______________*/
+
+/* _______________ Future Plans _______________*/
+
+/* _______________Timeline_______________*/
+
+.basicTimeline {
+	width: 90%;
+	padding: 50px 0;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.basicTimeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	background: white;
+	z-index: 1;
+}
+
+.basicTimeline h3 {
+	letter-spacing: 4px;
+	font-weight: 100;
+}
+
+.timelineTextArea {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	border-top: rgb(255, 255, 255, 0.5) dotted medium;
+	border-bottom: rgb(255, 255, 255, 0.5) dotted medium;
+	background-color: rgb(255, 255, 255, 0.04)
+}
+
+.timelineTextArea p {
+	font-size: 14px;
+}
+
+.timelineTextArea p,
+h2,
+h3 {
+	padding: 5px;
+}
+
+.timelineTextAreaRight {
+	float: right;
+}
+
+.timelineTextAreaLeft {
+	float: left;
+}
+
+.timeline-content {
+	width: 100%;
+	padding: 4px;
+}
+
+.timeline-content h2 {
+	background-color: rgb(255, 255, 255, 0.07);
+
+}
+
+.timelineImg {
+	display: block;
+	text-align: center;
+}
+
+.timelineImg img {
+	max-width: 30vw;
+	border-radius: 40px;
+	margin-bottom: 20px;
+}
+
+/* _______________ Future Launches _______________*/
+
+.textArea3 {
+	display: block;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.centerContentDiv {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.centerContentDiv h2 {
+	text-align: center;
+	background-color: rgb(225, 225, 225 0.5);
+}
+
+
+#futureLaunchesTable {
+	padding: 0px;
+	border: rgb(255, 255, 255, 1) solid thin;
+	border-radius: 20px;
+	background-color: rgb(225, 225, 225, 0.07);
+
+}
+
+
+#futureLaunchesTable td {
+	padding: 15px;
+	font-weight: 300;
+	border-bottom: rgb(255, 255, 255, 0.3) solid thin;
+	border-right: rgb(255, 255, 255, 0.3) solid thin;
+}
+
+
+#futureLaunchesTable th {
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	padding: 15px;
+	text-align: center;
+	background-color: rgb(255, 255, 255, 0.3);
+}
+
+/* _______________CONTACT_______________*/
+
+/* _______________FORM_______________*/
+
+.textArea2 {
+	display: block;
+	margin: auto;
+	margin-bottom: 40px;
+	width: 50%;
+}
+
+.textArea2 h2 {
+	text-align: center;
+}
+
+.contactFormDiv {
+	padding: 10px;
+
+}
+
+.contactFormDiv fieldset {
+	text-align: center;
+}
+
+.contactFormDiv input,
+textarea {
+	display: block;
+	margin: auto;
+}
+
+.contactFormDiv p {
+	text-align: center;
+}
+
+
+#inputName {
+	width: 50%;
+	display: block;
+	padding: 7px;
+	border: rgb(0, 0, 0, 1) solid thin;
+	font-size: 18px;
+}
+
+#emailInput {
+	width: 50%;
+	display: block;
+	padding: 7px;
+	border: rgb(0, 0, 0, 1) solid thin;
+	font-size: 18px;
+}
+
+#textInput {
+	width: 50%;
+	height: 150px;
+	display: block;
+	padding: 7px;
+	border: rgb(0, 0, 0, 1) solid thin;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#checkbox {
+	width: 2%;
+	margin: 2px;
+	display: inline-block;
+
+
+}
+
+.contactFormDiv fieldset {
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+	border: none;
+}
+
+
+.SubmitMail {
+	width: auto;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255, 0.8);
+	background-color: rgb(85, 0, 0, 1);
+	font-weight: 300;
+	font-size: 12pt;
+	text-decoration: none;
+	cursor: pointer;
+	border: thin;
+	border-style: solid;
+	letter-spacing: 4px;
+	margin: 5px;
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+	width: 150px;
+	padding: 10px;
+	display: block
+}
+
+
+.SubmitMail:hover {
+	background-color: rgb(255, 255, 255, 1);
+	color: rgb(0, 0, 0, 1.0);
+	font-weight: 600;
+	box-shadow: none;
+
+}
+
+#notification {
+	color: red;
+	font-size: 18px;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 100%);
+	padding: 5px;
+	text-align: center;
+}
+
+
+/* _______________More info_______________*/
+.moreContactInformation {
+	text-align: center;
+	
+
+}
+
+.moreContactInformation h3 {
+	letter-spacing: 4px;
+	font-weight: 100;
+	text-transform: uppercase;
+	background-color: rgb(255, 255, 255, 0.04);
+}
+
+.moreContactInformation div {
+	float: left;
+	width: 33%;
+	padding: 0px;
+	height: 300px;
+	margin: auto;
+	margin-bottom: 50px;
+
+}
+
+.contactInformation p {
+	text-align: left;
+	padding-left: 5px;
+}
+
+.socialMediaIcons img {
+	border: thick solid transparent;
+	border-radius: 100px;
+}
+
+.socialMediaIcons img:hover {
+	border: thick solid white;
+}
+
+.socialMediaIcons img:active {
+	border: thick solid transparent;
+}
+
+.hqMap iframe {
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+
+}
+
+/* _______________HISTORY_______________*/
+
+/* _______________Timeline_______________*/
+
+#basicTimeline {
+	width: 90%;
+	padding: 50px 0;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#basicTimeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	background: white;
+	z-index: 1;
+	border: solid thin;
+}
+
+
+#basicTimeline h3 {
+	letter-spacing: 4px;
+	font-weight: 100;
+}
+
+.timelineTextArea2 {
+	width: 50%;
+	border-top: rgb(255, 255, 255, 0.5) solid thin;
+	border-bottom: rgb(255, 255, 255, 0.5) solid thin;
+	background-color: transparent;
+	clear: both;
+}
+
+.timelineTextArea2 p {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.timelineTextArea2 h2 {
+	letter-spacing: 4px;
+	font-weight: 300;
+	font-size: 22px;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.0) 100%);
+	margin: 10px;
+	width: 100%;
+}
+
+.timelineTextArea2 h4 {
+	letter-spacing: 6px;
+}
+
+.timelineTextArea2 p,
+h2,
+h4 {
+	margin: 0px;
+	padding: 7px;
+}
+
+.timelineTextAreaRight2:nth-child(odd) {
+	float: left;
+	direction: rtl;
+	text-align: right;
+	background-color: rgb(255, 255, 255, 0.1);
+	margin-top: 20px;
+
+}
+
+
+.timelineTextAreaRight2:nth-child(even) {
+	float: right;
+	width: 50%;
+	text-align: left;
+	background-color: rgb(255, 255, 255, 0.1);
+	margin-top: 20px;
+}
+
+
+.timeline-content2 {
+	width: 80%;
+	padding: 4px;
+}
+
+
+.timeline-content2 ul {
+	list-style-type: none;
+	display: flex;
+	margin: 0px;
+	padding: 20px 0px 30px 0px;
+}
+
+
+.timeline-content2 a {
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255, 255, 255, 0.8);
+	background-color: rgb(85, 0, 0, 1);
+	font-weight: 300;
+	font-size: 14pt;
+	padding: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	border: thin;
+	border-style: solid;
+	letter-spacing: 4px;
+	margin: 5px;
+	box-shadow: 0px 5px 9px 3px rgb(0, 0, 0, 0.4);
+}
+
+.timeline-content2 a:hover {
+	background-color: rgb(255, 255, 255, 1);
+	box-shadow: none;
+	color: rgb(0, 0, 0, 1.0);
+	font-weight: 300;
+}
+
+/* _______________FOOTER _______________*/
+
+
+footer {
+	background: rgb(5, 5, 5, 1);
+	border-top-color: rgb(255, 255, 255, 0.8);
+	border-top-style: solid;
+	border-top-width: thin;
+	text-align: center;
+	padding: 20px;
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+}
+
+.footerlinks {
+	color: rgb(255, 255, 255, 1);
+	font-weight: 300;
+	font-size: 12pt;
+	padding: 7px;
+	text-decoration: none;
+	cursor: pointer;
+	border: thin;
+	border-style: solid;
+	box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+	background-color: rgb(85, 0, 0, 1);
+}
+
+.footerlinks:hover {
+	background-color: rgb(255, 255, 255, 1);
+	color: rgb(0, 0, 0, 1);
+	font-weight: 300;
+	box-shadow: none;
+}
+
+.footerlinksContainer {
+	margin: 10px;
+}
+
+.footerlinksContainer a {
+	margin: 10px;
+}
+
+
+.socialmedia {
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.smi {
+	color: rgb(255, 255, 255, 1);
+	background-color: rgb(255, 255, 255, 0.1);
+	font-weight: 300;
+	font-size: 12pt;
+	padding: 5px;
+	text-decoration: none;
+	margin: 10px;
+	cursor: pointer;
+	border: thin;
+	border-style: solid;
+	display: inline-block;
+	letter-spacing: 4px;
+}
+
+.copyright {
+	margin-top: 50px;
+	font-size: 12px;
+	letter-spacing: 4px;
+	font-weight: 100;
+}
+
+.smi:hover {
+	background-color: rgb(255, 255, 255, 1);
+	color: rgb(0, 0, 0, 1.0);
+}
+
+/* _______________________________________________________________________________________________________________MEDIA QUERIES _______________*/
+
+
+/* _______________________________________________________________________________________________________________MEDIA QUERIES _______________*/
+
+
+/* _______________________________________________________________________________________________________________MEDIA QUERIES _______________*/
+
+
+/* _______________BIGGER THAN TABLETS _______________*/
+
+@media screen and (min-width: 1440px) and (max-width: 1500px) {
+
+
+	.nextLaunchMap iframe {
+		width: 100%;
+		margin: 0px;
+	}
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+
+	/* _______________Current _______________*/
+
+	/* _______________COMPANY INFO _______________*/
+
+	#companyInfo a {
+		display: inline-block;
+
+	}
+
+
+	/* _______________LAUNCHES _______________*/
+	#nextLaunchCountdown p {
+		display: block;
+		margin: 10px;
+		padding: 10px;
+	}
+
+	.nextLaunchMap {
+		text-align: center;
+		margin: 20px;
+		padding: 0px;
+	}
+
+	.nextLaunchMap iframe {
+		border: rgb(255, 255, 255, 1) solid thin;
+		box-shadow: 0px 10px 18px 6px rgb(0, 0, 0, 0.7);
+		max-width: 100%
+	}
+
+	/* _______________LAUNCH PADS _______________*/
+
+	.launchVideo iframe {
+		max-width: 90%;
+	}
+
+	/* ______CONTACT ________________________________________*/
+	/* ______The Form _______________________*/
+
+	.contactFormDiv {
+		display: block;
+		width: 100%;
+		padding: 0px;
+	}
+
+
+	.contactFormDiv p {
+		padding: 3px;
+		margin: 0px;
+	}
+
+
+	.contactFormDiv div {
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+	}
+
+	.contactFormDiv label {
+		font-size: 18px;
+		display: block;
+		text-align: left;
+		width: 80%;
+		margin: auto;
+	}
+
+	#inputName {
+		width: 80%;
+		padding: 5px;
+		margin: auto;
+	}
+
+	#emailInput {
+		width: 80%;
+		padding: 5px;
+		margin: auto;
+	}
+
+	#textInput {
+		width: 80%;
+		height: 50%px;
+		padding: 5px;
+		margin: auto;
+	}
+
+	#checkbox {
+		width: auto;
+		display: inline-block;
+		margin: auto;
+	}
+
+
+	.SubmitMail {
+		width: auto;
+		font-size: 18pt;
+		border-style: solid;
+		letter-spacing: 4px;
+		margin: auto;
+		padding: 10px;
+		margin-bottom: 15px;
+	}
+
+
+	#notification {
+		color: red;
+		font-size: 18px;
+		padding: 10px;
+		text-align: center;
+		background: transparent;
+	}
+
+
+	/* _______________More info_______________*/
+
+	.moreContactInformation {
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+
+
+	.moreContactInformation div {
+		float: none;
+		width: 100%;
+		padding: 0px;
+		height: auto;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+
+	.contactInformation {
+		margin: 0px;
+		padding: 0px
+	}
+
+	.contactInformation p {
+		text-align: center;
+		padding: 5px;
+		margin: 0px;
+		font-size: 18px;
+	}
+
+	.socialMediaIcons img {
+		border: thick solid transparent;
+		border-radius: 100px;
+		width: auto;
+	}
+
+	.hqMap iframe {
+		width: 100%;
+		margin: 0px;
+		max-width: 500px;
+	}
+
+
+/* ______________FUTURE_______________*/
+
+/* ______________Future Launches______________*/
+	.centerContentDiv {
+		display: block;
+		margin-bottom: 50px;
+		margin: auto;
+	}
+
+}
+
+
+/* ______________TABLETS AND PHONES _______________*/
+
+@media screen and (max-width: 768px) {
+
+
+	.thumbnailGallery {
+		width: 50%;
+		margin: 6px 0;
+	}
+
+	/* ______RIGHT NOW ________________________________________*/
+	/* ______COMPANY _______________________*/
+
+
+	/* ______FUTURE ________________________________________*/
+	/* ______Launch Table _______________________*/
+
+
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+	/* ______HEADER______________________*/
+
+	.mainHeader {
+		padding-bottom: 5px;
+		text-align: center;
+		display: block;
+		max-width: 100%;
+	}
+
+
+	.logoSection {
+		margin: 0px;
+		padding: 3px;
+	}
+
+
+	.navbar {
+		overflow: hidden;
+		width: 90%;
+		margin-left: auto;
+
+	}
+
+
+	.navbar a {
+		font-size: 18px;
+		text-align: center;
+		padding: 2px;
+		margin-top: 2px;
+
+	}
+
+	.dropDownLink .dropDownName {
+		font-size: 18px;
+		padding: 2px;
+		margin-top: 2px;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		min-width: none;
+
+	}
+
+	.dropdown-content a {
+		padding: 7px;
+		text-align: center;
+		margin: 2px;
+	}
+
+
+	/* ______Parallaxes ______*/
+
+	.parallax1,
+	.parallax2,
+	.parallax3,
+	.parallax4,
+	.parallax5,
+	.parallax6,
+	.parallax7,
+	.parallax8,
+	.parallax9 {
+		position: relative;
+		opacity: 1;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.parallax1 {
+		background-image: url("images/resized/welcomepar.jpg");
+		min-height: 500px;
+
+	}
+
+	.parallax2 {
+		background-image: url("images/resized/launchpar.jpg");
+		min-height: 400px;
+	}
+
+	.parallax3 {
+		background-image: url("images/resized/rocketspar.jpg");
+		min-height: 400px;
+	}
+
+	.parallax4 {
+		background-image: url("images/resized/launchpadspar.jpg");
+		min-height: 400px;
+	}
+
+	.parallax5 {
+		background-image: url("/images/resized/futureplanspar.jpg");
+		min-height: 400px;
+	}
+
+	.parallax6 {
+		background-image: url("/images/resized/futurelaunchspar.jpg");
+		min-height: 400px;
+	}
+
+	.parallax7 {
+		background-image: url("/images/resized/par7.jpg");
+		min-height: 400px;
+	}
+
+	.parallax8 {
+		background-image: url("/images/resized/par8v2.jpg");
+		min-height: 500px;
+	}
+
+	.parallax9 {
+		background-image: url("");
+		min-height: 400px;
+	}
+
+
+	/* ______COMMON ________________________________________*/
+
+
+	body {
+		width: auto;
+	}
+
+	.textArea {
+		display: flex;
+		flex-direction: column;
+		margin: 10px;
+		padding: 10px;
+
+	}
+
+	.textArea h2 {
+		font-size: 16px;
+	}
+
+	.col1,
+	.col2 {
+		width: 80%
+	}
+
+
+	.parallaxheader {
+		text-align: center;
+	}
+
+	.parHeader {
+		padding: 0px;
+		margin: auto;
+	}
+
+	.col1,
+	.col2,
+	.col3 {
+		margin: auto;
+		padding: 0px;
+		text-align: left;
+	}
+
+	.generalTextBox {
+		padding: 5px;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+	.basicLink {
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.textArea h2 {
+		text-align: center;
+	}
+
+	.textArea {
+		padding: 0px;
+		margin: 2px;
+	}
+
+
+	.collapsible {
+		width: 5%;
+	}
+
+	.collapsibleHeader {
+		font-size: 18px;
+		margin: 0px;
+	}
+
+
+	.thumbnailGallery {
+		width: 100%;
+	}
+
+
+
+	.parallaxheader {
+		font-size: 14px;
+		width: 100%
+	}
+
+	.collapsibleHeader {
+		padding: 15px;
+	}
+
+	/* ______RIGHT NOW ________________________________________*/
+	/* ______COMPANY _______________________*/
+	#companyInfo {
+		padding: 3px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#companyInfo ul {
+		list-style-type: none;
+		display: block;
+		padding: 5px;
+	}
+
+	#companyInfo li {
+		margin: 20px;
+		text-align: center;
+	}
+
+
+	#companyInfo a {
+		font-weight: 300;
+		font-size: 12pt;
+		padding: 5px;
+		margin: 0px;
+	}
+
+	.newsLetter h2 {
+		font-size: 20px;
+	}
+
+	.newsLetter {
+		text-align: center;
+		margin: auto;
+		padding: 0px;
+	}
+
+	.newsLetter input {
+		width: 70%
+	}
+
+	#newsletterbutton {
+		margin-bottom: 20px;
+	}
+
+
+
+	/* ______NEXT LAUNCH_______________________*/
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+
+	#nextLaunchCountdown {
+		text-align: center;
+		border: rgb(255, 255, 255, 0.5) solid thin;
+		border-radius: 20px;
+		padding: 10px;
+		background-color: rgb(255, 255, 255, 0.1);
+		margin-bottom: 20px;
+	}
+
+	#nextLaunchCountdown p {
+		display: block;
+		margin: 20px;
+		border: rgb(255, 255, 255, 0.5) solid thin;
+		border-radius: 20px;
+		padding: 5px;
+		text-align: center;
+		background-color: rgb(31, 34, 40, 1);
+	}
+
+
+	#nextLaunch {
+		text-align: left;
+		padding: 5px;
+		letter-spacing: 1px;
+	}
+
+
+	.nextLaunchMap {
+		margin: 2px;
+	}
+
+	.nextLaunchMap iframe {
+		height: 100%;
+		width: 100%;
+	}
+
+	/* ______Rockets_______________________*/
+
+	.rocketFamilyImg {
+		width: 90%;
+	}
+
+	#rocketInformation {
+		display: block;
+		margin: 0px;
+		text-align: left;
+	}
+
+	.rocketTable {
+		width: 100%;
+		margin: 0px;
+		padding: 3px;
+	}
+
+	.rocketTable h3 {
+		text-align: center;
+	}
+
+
+	/* ______Launch Pads_______________________*/
+
+	.launchVideo {
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+	}
+
+	.launchVideo iframe {
+		width: 90%;
+		padding: 5px;
+		border: none;
+		box-shadow: none;
+	}
+
+	.basicButtonLink a {
+		font-size: 14px;
+		padding: 5px;
+	}
+
+	.basicButtonLink {
+		margin-top: 10px;
+	}
+
+
+	#launchPadsInformation {
+		display: block;
+		margin: 0px;
+		width: 100%;
+		text-align: left;
+	}
+
+	#launchPadsInformation a {
+		padding: 5px;
+		text-align: center;
+
+	}
+
+	.padTable {
+		margin: 0px;
+		padding: 5px;
+	}
+
+	.padTable h3 {
+		text-align: center;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+
+	.basicButtonLink {
+		text-align: center;
+	}
+
+
+
+	/* _______________FUTURE_______________*/
+
+	/* _______________ Future Plans _______________*/
+
+
+
+
+
+	/* _______________CONTACT_______________*/
+
+	/* _______________ Form _______________*/
+
+
+
+	.textArea2 {
+		display: block;
+		margin: none;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.textArea2 h2 {
+		text-align: center;
+		font-size: 24px;
+	}
+
+	.contactFormDiv {
+		display: block;
+		width: 100%;
+		padding: 0px;
+	}
+
+
+	.contactFormDiv p {
+		padding: 7px;
+		margin: 0px;
+		font-size: 16px;
+		text-align: center;
+	}
+
+
+	.contactFormDiv div {
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+	}
+
+	.contactFormDiv label {
+		font-size: 18px;
+		display: block;
+		text-align: left;
+		width: 80%;
+		margin: auto;
+	}
+
+	#inputName {
+		width: 80%;
+		padding: 5px;
+		margin: auto;
+	}
+
+	#emailInput {
+		width: 80%;
+		padding: 5px;
+		margin: auto;
+	}
+
+	#textInput {
+		width: 80%;
+		height: 50%px;
+		padding: 5px;
+		margin: auto;
+	}
+
+	#checkbox {
+		width: auto;
+		display: inline-block;
+		margin: auto;
+		margin-top: 10px;
+	}
+
+
+	.SubmitMail {
+		width: auto;
+		font-size: 18pt;
+		border-style: solid;
+		letter-spacing: 4px;
+		margin: auto;
+		;
+		padding: 10px;
+		margin-bottom: 15px;
+	}
+
+
+	#notification {
+		color: red;
+		font-size: 18px;
+		padding: 10px;
+		text-align: center;
+		background: transparent;
+	}
+
+
+	/* _______________More info_______________*/
+
+
+	.moreContactInformation {
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+
+
+	.moreContactInformation div {
+		float: none;
+		width: 100%;
+		padding: 0px;
+		height: auto;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+
+	.contactInformation {
+		margin: 0px;
+		padding: 0px
+	}
+
+	.contactInformation p {
+		text-align: center;
+		padding: 5px;
+		margin: 0px;
+		font-size: 18px;
+	}
+
+	.socialMediaIcons img {
+		border: thick solid transparent;
+		border-radius: 100px;
+		width: auto;
+	}
+
+	.hqMap iframe {
+		width: 100%;
+		margin: 0px;
+		max-width: 500px;
+	}
+
+
+
+	/* _______________ Future Launches _______________*/
+
+	.centerContentDiv {
+		width: 100%;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+
+
+	#futureLaunchesTable {
+		margin: 0px;
+		padding: 0px;
+		border: none;
+		border-radius: 20px;
+		background-color: transparent;
+		font-size: 16px;
+		width: 100%;
+	}
+
+	#futureLaunchesTable td {
+		padding: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		word-wrap: break-word;
+
+	}
+
+
+	#futureLaunchesTable tr {
+		background-color: rgb(255, 255, 255, 0.1)
+	}
+
+
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	#futureLaunchesTable {
+		border: none;
+		background: transparent;
+	}
+
+	thead tr {
+		position: absolute;
+		display: none;
+	}
+
+	tr {
+		border: rgb(255, 255, 255, 1) solid thin;
+		border-radius: 20px;
+		margin-bottom: 20px;
+	}
+
+	td {
+		position: relative;
+		padding-left: 200px;
+		margin-left: 150px;
+	}
+
+	td:before {
+		position: absolute;
+		top: 12px;
+		left: 6px;
+		width: 200px;
+		padding-right: 40px;
+		white-space: nowrap;
+		margin-left: -150px;
+		text-align: left;
+	}
+
+
+	td:nth-of-type(1):before {
+		content: "Mission Name";
+	}
+
+	td:nth-of-type(2):before {
+		content: "Launch Year";
+	}
+
+	td:nth-of-type(3):before {
+		content: "Launch Date(UTC)";
+	}
+
+	td:nth-of-type(4):before {
+		content: "Rocket Name";
+	}
+
+	td:nth-of-type(5):before {
+		content: "Location";
+	}
+
+
+	/* ______FOOTER______________________*/
+
+	footer {
+		width: 100%;
+		padding: 0;
+		padding-bottom: 10px;
+	}
+
+	.footer {
+		display: block;
+		width: 100%;
+	}
+
+	.footerlinks {
+		padding: 5px;
+		margin: 5px;
+	}
+
+	.socialmedia {
+		font-weight: 300;
+	}
+
+	.copyright {
+		font-size: 14px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+	/* _______________HISTORY_______________*/
+
+	/* _______________Timeline_______________*/
+
+	#basicTimeline {
+		width: 100%;
+		padding: 0px;
+		margin: auto;
+		position: relative;
+		overflow: hidden;
+	}
+
+	#basicTimeline:before {
+		content: none;
+	}
+
+	#basicTimeline h2 {
+		letter-spacing: 4px;
+		font-weight: 100;
+	}
+
+	.timelineTextArea2 {
+		width: 50%;
+		clear: both;
+		border: solid thin;
+		border-color: rgb(255, 255, 255 0.5);
+		border-radius: 10px;
+	}
+
+	.timelineTextArea2 p, h2, h4 {
+		margin: 0px;
+		padding: 7px;
+	}
+
+	.timelineTextArea2 p {
+		font-size: 16px;
+		font-weight: 300;
+	}
+
+	.timelineTextArea2 h2 {
+		letter-spacing: 4px;
+		font-weight: 300;
+		font-size: 18px;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.0) 100%);
+		margin: 10px;
+		width: 90%;
+		text-align: center;
+	}
+
+	.timelineTextArea2 h4 {
+		letter-spacing: 6px;
+		font-weight: 300;
+		font-size: 16px;
+	}
+
+	.timelineTextAreaRight2 {
+		margin-bottom: 20px;
+	}
+
+	.timelineTextAreaRight2:nth-child(odd) {
+		float: none;
+		text-align: left;
+		width: 99%;
+		background-color: rgb(0, 0, 0, 0.3);
+		direction: ltr;
+	}
+
+
+	.timelineTextAreaRight2:nth-child(even) {
+		float: none;
+		width: 99%;
+		text-align: left;
+		direction: ltr;
+	}
+
+	.timeline-content2 {
+		width: 90%;
+		padding: 4px;
+		margin: auto;
+	}
+
+
+	.timeline-content2 ul {
+		list-style-type: none;
+		display: block;
+		margin: auto;
+		padding: 20px 0px 30px 0px;
+		text-align: center;
+		max-width: 150px;
+	}
+
+
+	.timeline-content2 a {
+		background-color: rgb(85, 0, 0, 1);
+		font-weight: 300;
+		font-size: 14pt;
+		padding: 5px;
+		border: thin;
+		border-style: solid;
+		letter-spacing: 2px;
+		margin: 5px;
+		display: block;
+	}
+
+	.timeline-content2 a:hover {
+		background-color: rgb(255, 255, 255, 1);
+		box-shadow: none;
+		color: rgb(0, 0, 0, 1.0);
+		font-weight: 300;
+	}
+
+
+	/* _______________FUTURE_______________*/
+
+	/* _______________ Future Plans _______________*/
+
+	/* _______________Timeline_______________*/
+
+	.basicTimeline {
+		width: 100%;
+		padding: 20px 0;
+		margin: 0px;
+	}
+
+
+	.basicTimeline:before {
+		content: none;
+	}
+
+
+	.basicTimeline h3 {
+		letter-spacing: 4px;
+		font-weight: 100;
+		font-size: 18px;
+	}
+
+	.timelineTextArea {
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+
+	.timelineTextArea p {
+		font-size: 16px;
+	}
+
+	.timelineTextAreaRight {
+		float: none;
+	}
+
+	.timelineTextAreaLeft {
+		float: none;
+
+	}
+
+	.timeline-content {
+		width: 100%;
+		padding: 4px;
+	}
+
+	.timelineImg {
+		display: block;
+		text-align: center;
+	}
+
+	.timelineImg img {
+		max-width: 80%;
+		border-radius: 40px;
+		margin-bottom: 20px;
+	}
+
+}
